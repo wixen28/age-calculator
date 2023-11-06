@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+      <form>
+        <div class="form_container">
+            <div class="block">
+          <label for="day">
+            Day
+          </label>
+          <input type="number" placeholder="DD" id="day">
+          <small></small>
+        </div>
+        <div class="block">
+          <label for="month">
+            Month
+          </label>
+          <input type="number" placeholder="MM" id="month">
+          <small></small>
+        </div>
+        <div class="block">
+          <label for="year">
+            Year
+          </label>
+          <input type="number" placeholder="YYYY" id="year">
+          <small></small>
+        </div>
+        </div>
+        <div class="submit_block">
+          <hr>
+          <button type="submit" class="sumbit_btn"><img src="./assets/images/icon-arrow.svg" alt="icon"></button>
+        </div>
+      </form>
+  
+    <section class="second-part">
+      <ul>
+        <li><span id="YY">--</span> years</li>
+        <li><span id="MM">--</span> months</li>
+        <li><span id="DD">--</span> days</li>
+      </ul>
+    </section>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Viktoria</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
