@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Libre+Franklin:wght@200;400&family=Poppins:wght@100;200;400;600;700;800;900&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.attribution {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+body {
+    background-color: hsl(0, 2%, 42%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 90%;
+    padding: 20px;
+    background: white;
+    height: auto;
+    border-radius: 20px 20px 100px 20px;
+}
+
+
+/* TOP PART */
+
+.form_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 30%;
+}
+
+label {
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 12px;
+    color: hsl(0, 1%, 44%);
+}
+
+input {
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 5%, 73%);
+    margin-top: 8px;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* ODSTRANENIE ARROWS V INPUTE */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+small {
+    color: red
+}
+
+button {
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    padding: 15px;
+    margin-top: -25px;
+    margin-left: 40%;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: hsl(259, 57%, 52%);
+}
+/* BOTTOM PART */
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    list-style-type: none;
+}
+
+.second-part {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-weight: bold;
+}
+span {
+    font-size: 40px;
+    color: hsl(259, 100%, 65%);
+}
+
+li {
+    font-size: 40px;
+    color: black;
+}
+
+@media screen and (min-width: 590px) {
+    .container {
+        width: 60%;
+        max-width: 600px;
+        justify-content: center;
+
+    }
+
+    .second-part {
+        font-weight: 900;
+    }
+    
+
+    span {
+        font-size: 50px;
+    }
+    
+    li {
+        font-size: 50px;
+        color: black;
+    }
+
+    button {
+        float: right;
+    }
+
+    .block {
+        width: 30%;
+    }
+}
